@@ -2,6 +2,12 @@
 
 }
 
+@media (min-width: 980px){
+	body {
+		padding-top: 60px;
+	}
+}
+
 .project-img {
 	height: 100px; width: 100px;
 	border-radius: 100%;
