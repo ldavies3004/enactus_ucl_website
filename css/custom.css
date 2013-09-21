@@ -1,17 +1,36 @@
+/********************* COLOUR REFERENCE CHART *********************
+
+	enactus gold       gold       #FFC222
+	enactus grey       grey       #515356
+
+set colour by: /*gold*/#FFC222
+/* if colour changes, simple find and replace */
+
+/******************************************************************/
+
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900);
 
 body {
-	background-color: #E7E7E2;
+	/*background-color: #E7E7E2;*/
+	background-color: white;
 }
 
 @media (min-width: 980px){
 	body {
-		padding-top: 60px;
+		padding-top: 40px;
 	}
 }
 
+/* ########################################################################
+                            NAV BAR
+######################################################################## */
+.navbar {
+	margin-bottom: 0;
+}
+
 .navbar-inner {
-	background-color: white;
+	background-color: /*grey*/#515356;
 	background-image: none;
   	background-repeat: no-repeat;
   	filter: none;
@@ -19,9 +38,10 @@ body {
 
 .navbar .brand {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 24px;
-	color: #515356;
+	color: white;
+	letter-spacing: 0.5px;
 }
 
 .navbar .nav .active > a,
@@ -30,7 +50,7 @@ body {
  	font-family: 'Source Sans Pro', sans-serif;
 	text-shadow:none;
 	box-shadow: none;
-	background-color: #FFC222;
+	background-color: /*gold*/#FFC222;
 }
 
 .navbar .btn-navbar {
@@ -41,7 +61,7 @@ body {
 }
 
 .navbar .btn-navbar .icon-bar { 
-	background-color: #515356; 	
+	/*background-color: #515356; 	*/
 }
 
 /* .navbar-inner:hover {
@@ -51,6 +71,24 @@ body {
   	background-repeat: no-repeat;
 	filter: none;
 } */
+
+/* ########################################################################
+                           			BODY
+######################################################################## */
+.vision {
+	border: 1px solid red;
+	margin: auto; padding: 0;
+}
+
+.vision h2 {
+	text-align: center;
+}
+
+.marketing {
+	border: 1px solid red;
+	margin-top: 0;
+	padding-top: 0;
+}
 
 .card {
 	background-color: white;
@@ -75,4 +113,21 @@ body {
 	background-color: #FFC222;
 	font-weight: bold;
 	font-size: 24px;
+}
+
+
+.footer {
+	width: 100%;
+	background-color: /*grey*/#515356;
+	margin: 0; padding: 0;
+}
+
+.footer h2, .footer p{
+	color: white;
+	margin: 12px;
+}
+
+.page-end {
+	background-color: /*gold*/#FFC222;
+	height: 6px; width: 100%;
 }
