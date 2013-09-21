@@ -9,7 +9,8 @@ set colour by: /*gold*/#FFC222
 /******************************************************************/
 
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
 
 body {
 	/*background-color: #E7E7E2;*/
@@ -44,13 +45,29 @@ body {
 	letter-spacing: 0.5px;
 }
 
+.navbar .nav li a {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-shadow:none;
+	box-shadow: none;
+	color: white;
+	font-weight: 400;
+}
+
+.navbar .nav li a:hover {
+	color: /*gold*/#FFC222;
+	font-weight: bold;
+
+}
+
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover,
 .navbar .nav .active > a:focus{
  	font-family: 'Source Sans Pro', sans-serif;
 	text-shadow:none;
 	box-shadow: none;
-	background-color: /*gold*/#FFC222;
+	color: /*gold*/#FFC222;
+	font-weight: bold;
+	background-color: #515356;
 }
 
 .navbar .btn-navbar {
@@ -58,10 +75,6 @@ body {
  	background-color: white;
   	background-image: none;
   	border: none;
-}
-
-.navbar .btn-navbar .icon-bar { 
-	/*background-color: #515356; 	*/
 }
 
 /* .navbar-inner:hover {
@@ -72,20 +85,25 @@ body {
 	filter: none;
 } */
 
+#right {
+	float: right;
+}
 /* ########################################################################
                            			BODY
 ######################################################################## */
 .vision {
-	border: 1px solid red;
+	background-color: /*gold*/#FFC222;
+	border: 1px solid rgba(0, 0, 0, 0);
 	margin: auto; padding: 0;
 }
 
-.vision h2 {
+.vision h1 {
 	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
 }
 
 .marketing {
-	border: 1px solid red;
 	margin-top: 0;
 	padding-top: 0;
 }
@@ -163,4 +181,11 @@ body {
 	position: absolute;
 	right: 0;
 	margin-top: 30px;
+}
+
+
+@media screen and (max-width: 27em) {
+    .navbar .navbar-inner .container .nav {
+        display: none;
+    }
 }
