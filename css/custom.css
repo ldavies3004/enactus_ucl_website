@@ -32,6 +32,10 @@ header {
 	background-color: /*grey*/#515356;
 	z-index: 10;
 	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          
 }
 
 .inner-header {
@@ -81,7 +85,12 @@ li {
 /* ########################################################################
                            			BODY
 ######################################################################## */
+.content {
+	top: 78px; position: relative;
+}
+
 .vision {
+	width: 100%;
 	background-color: /*gold*/#FFC222;
 	border: 1px solid rgba(0, 0, 0, 0);
 	margin: auto; padding: 0;
@@ -96,9 +105,17 @@ li {
 	color: /*grey*/#515356;
 }
 
-.marketing {
-	margin-top: 0;
-	padding-top: 0;
+.video-container {
+    height: 0; 
+    position: relative;
+    padding-top: 30px; padding-bottom: 55%;
+    overflow: hidden;
+}
+ 
+.video-container iframe, .video-container object, .video-container embed {
+    height: 100%; width: 100%;
+    position: absolute;
+    top: 0; left: 0;
 }
 
 .sign-up h2 {
@@ -166,7 +183,9 @@ li {
 	font-weight: bold;
 	font-size: 24px;
 }
-
+/* ########################################################################
+                           			FOOTER
+######################################################################## */
 .footer {
 	width: 100%;
 	margin: 0; padding: 30px 0;
