@@ -17,76 +17,66 @@ body {
 	background-color: white;
 }
 
-@media (min-width: 980px){
-	body {
-		padding-top: 40px;
-	}
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
 }
-
 /* ########################################################################
-                            NAV BAR
+                            		HEADER
 ######################################################################## */
-.navbar {
-	margin-bottom: 0;
-}
-
-.navbar-inner {
+header {
+	/* stays on top */
+	position: fixed;
+	top: 0px; left: 0px;
+	/* looks */
+	height: 78px; width: 100%;
 	background-color: /*grey*/#515356;
-	background-image: none;
-  	background-repeat: no-repeat;
-  	filter: none;
+	z-index: 10;
+	overflow: hidden;
 }
 
-.navbar .brand {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 600;
-	font-size: 24px;
-	color: white;
-	letter-spacing: 0.5px;
+.inner-header {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
 }
 
-.navbar .nav li a {
-	font-family: 'Source Sans Pro', sans-serif;
-	text-shadow:none;
-	box-shadow: none;
-	color: white;
-	font-weight: 400;
+.logo {
+	height: 78px; width: 144px;
+	margin: auto 0;
+	float: left;	
 }
 
-.navbar .nav li a:hover {
-	color: /*gold*/#FFC222;
-	font-weight: bold;
-
-}
-
-.navbar .nav .active > a,
-.navbar .nav .active > a:hover,
-.navbar .nav .active > a:focus{
- 	font-family: 'Source Sans Pro', sans-serif;
-	text-shadow:none;
-	box-shadow: none;
-	color: /*gold*/#FFC222;
-	font-weight: bold;
-	background-color: #515356;
-}
-
-.navbar .btn-navbar {
-  	text-shadow: none;
- 	background-color: white;
-  	background-image: none;
-  	border: none;
-}
-
-/* .navbar-inner:hover {
-  	color: #ffffff;
-  	background-color: #FFC222;
-	background-image: none;
-  	background-repeat: no-repeat;
-	filter: none;
-} */
-
-#right {
+ul {
+	padding: 0;
 	float: right;
+	line-height: 78px;
+}
+
+li {
+	display: inline;
+	margin: 12px;
+}
+
+.navv li a {
+	text-decoration: none;
+	color: white;
+  	text-align: center;
+  	display: inline-block;
+  	font-family: 'Source Sans Pro', sans-serif;
+	text-shadow:none; box-shadow: none;
+	font-size: 16px; font-weight: 400;
+}
+
+.navv li .active {
+	color: /*gold*/#FFC222;
+	font-weight: bold;
+	/*background-color: /*gold*/#FFC222;*/
+	/*padding: 3px 12px; */
+}
+
+.navv li a:hover {
+	color: /*gold*/#FFC222;
 }
 /* ########################################################################
                            			BODY
@@ -100,7 +90,10 @@ body {
 .vision h1 {
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 48px;
+	line-height: 1.5em;
 	font-weight: 200;
+	color: /*grey*/#515356;
 }
 
 .marketing {
@@ -108,10 +101,51 @@ body {
 	padding-top: 0;
 }
 
+.sign-up h2 {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 48px;
+	font-weight: 200;
+	color: /*grey*/#515356;;
+}
+
+.email-form {
+	margin: auto;
+	text-align: center;
+	position: relative;
+}
+
+.input-email {
+	height: 28px;
+	border: solid 1px /*grey*/#515356;
+    padding-left: 6px;  
+}
+
+.button-submit {
+	height: 28px; width: 115px;
+	display: inline-block;
+	background: white;
+	border: solid 1px /*grey*/#515356;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	color: /*grey*/#515356;
+/*	border-radius: 0 8px 8px 0;
+ 	-moz-border-radius: 0 8px 8px 0;
+  	-webkit-border-radius: 0 8px 8px 0;*/
+
+}
+
+
+
+
+.top {
+	margin-top: 24px;
+}
+
 .card {
 	background-color: white;
 	box-shadow: 2px 2px 5px #888;
-	
+	height: 270px;
 	font-family: 'Source Sans Pro', sans-serif;	
 	font-size: 18px;
 }
@@ -183,6 +217,61 @@ body {
 	margin-top: 30px;
 }
 
+
+/* ########################################################################
+                           		RESPONSIVENESS
+######################################################################## */
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 979px) {
+
+}
+
+
+
+
+
+
+@media (min-width: 980px){
+	body {
+		padding-top: 40px;
+	}
+}
+
+@media (max-width: 979px) {
+  .navbar-fixed-top {
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+}
+
+@media screen and (max-width: 540px) {
+  .footer .sitemap {
+    padding: 1em 0;
+  }
+  .footer .copyright {
+    display: block;
+    position: relative;
+    margin: 0;
+  }
+}
 
 @media screen and (max-width: 27em) {
     .navbar .navbar-inner .container .nav {
