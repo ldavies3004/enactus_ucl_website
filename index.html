@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
   
@@ -29,51 +30,51 @@
         <div class="video-container">
           <iframe width="640" height="360" src="http://www.youtube.com/embed/o7IP09Q1_SU?&rel=0&showinfo=0&modestbranding=1&hd=1&autohide=1&color=white" frameborder="0" allowfullscreen></iframe>
         </div>
-        <h1>a heart for the world.</h1>
+        <h1 id="what-we-do">a heart for the world.</h1>
     </div>
 
-    <div class="container" id="what-we-do">
+    <div class="container">
       <h2 class="hero">What We Do</h2>
-      <div class="row"><div class="span12">
-        <p class="lead">Sustainable solutions to individual and community challenges. Long lasting empowerment to beneficiaries (kinda same as above? but need to use empowerment). Making ideas happen.</p>
-      </div></div> 
+      <div class="row">
+        <div class="span12">
+          <p class="lead">Sustainable solutions to individual and community challenges. Long lasting empowerment to beneficiaries. Leading the way to improving people's lives. Taking the opportunity and making ideas happen.</p>
+        </div>
+      </div> 
     </div>
 
     <hr class="featurette-divider" id="projects">
 
     <div class="container">
+      <h2 class="hero">Our Projects</h2>
       <div class="row"> <!-- PROJECTS -->
       <div class="span4"> <!-- SPAN 4 -->
         <img class="project-img">
-        <h2>Community Counts</h2>
+        <h2 class="project-title">Community Counts</h2>
         <p>This project aims to tackle youth unemployment as well as lack of social cohesion. There are 4 steps to this project:
         1. Young people pitch to local businesses about the benefits of workexperience for both them and the employer
         2. UCL + carry deliver workshops on employability (cv, cover letter and interview help) and professional conduct
         3. The young people carry out their work experience
         4. Money from the placements goes towards funding an AQA youth leadership award that allows them to act as youth leaders as well as contributing to UCAS points</p>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
       </div> <!-- END SPAN 4 -->
       <div class="span4"> <!-- SPAN 4 -->
         <img class="project-img">
-        <h2>UCL+</h2>
+        <h2 class="project-title">UCL+</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
       </div> <!-- END SPAN 4 -->
       <div class="span4"> <!-- SPAN 4 -->
         <img class="project-img">
-        <h2>Enterprise Outreach</h2>
+        <h2 class="project-title">Enterprise Outreach</h2>
         <p>Lemons</p>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
       </div> <!-- END SPAN 4 -->
     </div><!-- END PROJECTS -->
   </div>
 
     <hr class="featurette-divider" id="who-we-are">
     
-    <div> <!-- TEAM -->
+    <div class="container"> <!-- TEAM -->
       <h2 class="hero">Who We Are</h2>
       <div class="row"><div class="span12">
-        <p class="lead">Gas.</p>
+        <p class="lead">So much <a class="inline-link" href="about-us.html">gas.</a></p>
       </div></div> 
     </div> <!-- END TEAM -->
 
@@ -83,16 +84,16 @@
       <h2 class="hero">Our Advisors</h2>
       <div class="container">
         <div class="row">
-          <div class="span3">
+          <div class="span3 advisor-square">
             <a href="http://uclu.org/services/volunteering-at-uclu/about-volunteering-services-unit/meet-vsu"><img src="img/vsu.jpg"></a>
           </div>
-          <div class="span3">
+          <div class="span3 advisor">
             <a href="http://www.ucl.ac.uk/advances"><img src="img/ucl-advances.gif"></a>
           </div>
-          <div class="span3">
+          <div class="span3 advisor-square">
             <a href="http://www.ucl.ac.uk/careers"><img src="img/ucl-careers-service.png"></a>
           </div>
-          <div class="span3">            
+          <div class="span3 advisor">            
             <a href="http://www.uclenterprise.org"><img src="img/ucles.png"></a>
           </div>
         </div>
@@ -103,16 +104,23 @@
         <div class="row">
           <div class="span4">
             <ul class="lead">
-              <li>Centrica</li>
-              <li>Gazprom</li>
-              <li>CEB</li>
+              <li><a href="http://www.centrica.co.uk"><img src="img/centrica.jpeg"></a></li>
+              <li><a href="http://www.hsbc.co.uk"><img src="img/hsbc.png"></a></li>
+              <li>CEB heinz mars</li>
             </ul>
           </div>
           <div class="span4">
-            <p class="lead">KPMG, HSBC, RBS</p>
+            <ul class="lead">
+              <li><a href="http://www.rbs.co.uk"><img src="img/rbs.jpg"></a></li>
+              <li><a href="http://www.kpmg.co.uk"><img src="img/kpmg.jpg"></a></li>
+            </ul>
           </div>
           <div class="span4">
-            <p class="lead">Heinz, Mars, EY</p>
+            <ul class="lead">
+              <li><a href="http://www.ey.co.uk"><img src="img/ey.gif"></a></li>
+              <li><a href="http://www.gazprom.co.uk"><img src="img/gazprom.png"></a></li>
+              <li><a href="http://www.kpmg.co.uk"><img src="img/kpmg.jpg"></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -120,50 +128,56 @@
 
     <hr class="featurette-divider">
     
-    <div class="sign-up"> <!-- SIGN UP -->
+    <div class="sign-up" id="who-is-enactus-for"> <!-- SIGN UP -->
       <h2>Who is Enactus for?</h2>
-      <div class="row">
-        <div class="span6">
-          <p class="lead">Be the first to receive updates about the ongoing projects and new opportunities to help the community!</p>
-        </div>
-        <div class="span6">
-          <p class="lead">Let us know if you think you can contribute to the cause!</p>
-        </div>
-      </div>
       <div class="container">
         <div class="row">
+          <div class="span6">
+            <p class="lead">Those who want to make a meaningful impact in their communities. People who want to face real life challenges.</p>
+          </div>
+          <div class="span6">
+            <p class="lead">Entrepreneurs. Project leaders. Business. Consultancy.</p>
+          </div>
+        </div>
+      
+        <div class="row">
           <div class="span12">
-            <p class="lead">If that sounds like you than sign up for our newsletter to find out more.</p>
+            <p class="lead">If that sounds like you and you want to make a difference in someone's life, then sign up for our newsletter to be the first to receive updates.</p>
           </div>
         </div>
       </div>
 
       <!-- INPUT TO GOOGLE FORM -->
       <form class="email-form" action="https://docs.google.com/forms/d/1S6Zdmwr8eWpn0R1GVf6Szl3BsRZdVScobvgGQHnLoi0/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
-        <div>
+        <div class="input-wrap">
           <input class="input-email" type="text" name="entry.1834513087" placeholder="will@join.us"> <!-- EMAIL INPUT -->
           <input class="button-submit" type="submit" name="submit" value="Submit"> <!-- SUBMIT BUTTON -->
         </div>        
       </form>
     </div>
 
-    <div class="footer">
-      <ul class="social">
-        <li>
-          <a target="_blank" href="https://www.facebook.com/enactusucl" title="facebook">facebook</a>
-        <li>
-          <a target="_blank" href="http://twitter.com/enactusucl" title="twitter">twitter</a>
-        <li>
-          <a target="_blank" href="http://www.linkedin.com/company/enactusucl" title="LinkedIn">linkedin</a>
-      </ul>
+    <footer>
+      <div class="inner-footer">
+        <ul class="social">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/enactusucl" title="facebook"><img src="img/social-fb.jpg"></a>
+          <li>
+            <a target="_blank" href="http://twitter.com/enactusucl" title="twitter"><img src="img/social-tw.jpg"></a>
+          <li>
+            <a target="_blank" href="mailto:info@enactusucl.org">email</a>
+        </ul>
 
-      <div class="sitemap">
-        <a href="about-us.html">About Us</a>
-        <a href="#">Jobs</a>
-        <a href="mailto:hi@enactusucl.org">Contact Us</a>
+        <ul class="sitemap">
+          <li>
+            <a target="_blank" href="about-us.html">About Us</a>
+          <!-- <li>
+            <a target="_blank" href="#who-is-enactus-for">Jobs</a> -->
+        </ul>
+
+        <!-- <span class="copyright">&copy; 2013 Enactus UCL</span> -->
+
       </div>
-      <span class="copyright">&copy; 2013 Enactus UCL</span>
-    </div>
+    </footer>
 
   </div>
 
