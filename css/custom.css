@@ -17,6 +17,10 @@ body {
 	background-color: white;
 }
 
+.row {
+	/*padding-left: 12px; padding-right: 12px;*/
+}
+
 h2 {
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -118,12 +122,16 @@ li {
     top: 0; left: 0;
 }
 
-.sign-up h2 {
+.sign-up h2, .hero {
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 48px;
 	font-weight: 200;
 	color: /*grey*/#515356;;
+}
+
+.hero {
+	/*color: /*gold*/#FFC222;*/
 }
 
 .email-form {
@@ -241,7 +249,9 @@ li {
                            		RESPONSIVENESS
 ######################################################################## */
 @media (min-width: 1200px) {
-
+	/*body {
+		border: 5px solid red;
+	}*/
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -249,11 +259,21 @@ li {
 }
 
 @media (max-width: 767px) {
-
+	body {
+		padding-left: 0; padding-right: 0;
+	}
 }
 
 @media (max-width: 480px) {
-
+	body {
+		padding-left: 0; padding-right: 0;
+	}
+	.vision {
+		
+	}
+	.vision h1 {
+		font-size: 28px;
+	}
 }
 
 @media (max-width: 979px) {
@@ -293,7 +313,5 @@ li {
 }
 
 @media screen and (max-width: 27em) {
-    .navbar .navbar-inner .container .nav {
-        display: none;
-    }
+    
 }
