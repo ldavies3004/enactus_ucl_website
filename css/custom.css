@@ -211,19 +211,19 @@ footer .sitemap a:hover {
 }
 
 
-#whatwedo {
+.wrap-full {
 	width: 100%;
 	margin: 0; padding: 0;
-	border: 1px solid red;
-
+}
+.wrap-full .hero, .wrap-full .lead {
+	margin: 0 auto;
+	max-width: 650px;
 }
 
 
 .project-title {
 	text-align: center;
 }
-
-
 
 .inline-link {
 	display: inline-block;
@@ -245,16 +245,13 @@ footer .sitemap a:hover {
 /*.inline-link:visited { background: #F2BF97; }*/
 
 
-.advisor img {
-	border: 1px solid red;
-	margin: auto 0;
+.advisors {
+	text-align: center;
 }
-
-.advisor-square img {
-	height: 150px; width: 350px;
-	border: 1px solid red;
+.advisors img {
+	max-width: 200px;
+	/*border: 1px solid red;*/
 }
-
 /* ########################################################################
                            	WHO IS ENACTUS FOR
 ######################################################################## */
@@ -345,10 +342,7 @@ input[type="email"]:focus {
 /* ########################################################################
                            		RESPONSIVENESS
 ######################################################################## */
-@media (min-width: 1200px) {
-	/*body {
-		border: 5px solid red;
-	}*/
+@media (min-width: 1200px) { /*WIDE SCREEN*/
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
