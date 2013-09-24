@@ -3,6 +3,7 @@
 <head>
   <title>Enactus UCL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A community based in UCL committed to improving people's lives through entrepreneurship and leadership in a sustainable manner." />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
@@ -17,7 +18,7 @@
         <ul class="navv">
           <li><a class="active" href="#what-we-do">What We Do</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#who-we-are">Who We Are</a></li>
+          <!-- <li><a href="#who-we-are">Who We Are</a></li> -->
           <li><a href="#advisors">Advisors</a></li>
         </ul>
     </div>
@@ -33,7 +34,7 @@
         <h1 id="what-we-do">a heart for the world.</h1>
     </div>
 
-    <div class="container">
+    <div class="container" id="whatwedo">
       <h2 class="hero">What We Do</h2>
       <div class="row">
         <div class="span12">
@@ -46,55 +47,61 @@
 
     <div class="container">
       <h2 class="hero">Our Projects</h2>
-      <div class="row"> <!-- PROJECTS -->
+      <div class="row"> <!-- ROW ONE -->
         <div class="span4"> <!-- SPAN 4 -->
           <img class="project-img">
-          <h2 class="project-title">Community Counts</h2>
-          <p>This project aims to tackle youth unemployment as well as lack of social cohesion. There are 4 steps to this project:
-          1. Young people pitch to local businesses about the benefits of workexperience for both them and the employer
-          2. UCL + carry deliver workshops on employability (cv, cover letter and interview help) and professional conduct
-          3. The young people carry out their work experience
-          4. Money from the placements goes towards funding an AQA youth leadership award that allows them to act as youth leaders as well as contributing to UCAS points</p>
+          <h2 class="project-name">Women's Group</h2>
+          <p class="lead">This is a project that has the potential to impact lives for years to come, you will be working with women from vulnerable backgrounds to teach them transferable skills to get into employment and also start their own enterprises.</p>
         </div> <!-- END SPAN 4 -->
         <div class="span4"> <!-- SPAN 4 -->
           <img class="project-img">
-          <h2 class="project-title">UCL+</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <h2 class="project-name">Food Social Enterprise</h2>
+          <p class="lead">This is an exciting project for those that would like to gain experience in consulting. You will be working with the founder of Made in Hackney food social enterprise to review her business model, increase existing revenue streams as well as help to identify new ones.</p>
         </div> <!-- END SPAN 4 -->
         <div class="span4"> <!-- SPAN 4 -->
           <img class="project-img">
-          <h2 class="project-title">Enterprise Outreach</h2>
-          <p>Lemons</p>
+          <h2 class="project-name">Anchor House</h2>
+          <p class="lead">This project is about empowering the homeless to transform their lives through employment. We are working to develop a sustainable scheme that will serve to give homeless people a chance for years to come.</p>
         </div> <!-- END SPAN 4 -->
-      </div><!-- END PROJECTS -->
+      </div><!-- END ROW ONE -->
+      <div class="row">
+        <div class="span6">
+          <h2 class="project-name">Enterprise Outreach</h2>
+          <p class="lead">Be a part of a project that is shaping a generation of upcoming entrepreneurs. We work with schools to teach young people business and economic principles that they then apply to their own ventures to make a profit!</p>
+        </div>
+        <div class="span6">
+          <h2 class="project-name">YES + Camden</h2>
+          <p class="lead">This project is about empowering young people through technology. You will be teaching young people how to code to develop websites and apps which they will then apply in apprenticeships with local businesses.</p>
+        </div>
+      </div>
     </div>
 
-    <hr class="featurette-divider" id="who-we-are">
+    <!-- <hr class="featurette-divider" id="who-we-are">
     
-    <div class="container"> <!-- TEAM -->
+    <div class="container">
       <h2 class="hero">Who We Are</h2>
       <div class="row"><div class="span12">
         <p class="lead">So much <a id="advisors" class="inline-link" href="about-us.html">gas.</a></p>
       </div></div> 
-    </div> <!-- END TEAM -->
+    </div> -->
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="advisors">
     
     <div>
       <h2 class="hero">Our Advisors</h2>
       <div class="container">
         <div class="row">
           <div class="span3">
-            <a href="http://uclu.org/services/volunteering-at-uclu/about-volunteering-services-unit/meet-vsu"><img class="partner" src="img/vsu.jpg"></a>
+            <a href="http://uclu.org/services/volunteering-at-uclu/about-volunteering-services-unit/meet-vsu"><img class="advisor" src="img/vsu.jpg"></a>
           </div>
           <div class="span3">
-            <a href="http://www.ucl.ac.uk/advances"><img class="partner" src="img/ucl-advances.png"></a>
+            <a href="http://www.ucl.ac.uk/advances"><img class="advisor" src="img/ucl-advances.png"></a>
           </div>
           <div class="span3">
-            <a href="http://www.ucl.ac.uk/careers"><img class="partner" src="img/ucl-careers-service.png"></a>
+            <a href="http://www.ucl.ac.uk/careers"><img class="advisor" src="img/ucl-careers-service.png"></a>
           </div>
           <div class="span3">            
-            <a href="http://www.uclenterprise.org"><img class="partner" src="img/ucles.png"></a>
+            <a href="http://www.uclenterprise.org"><img class="advisor" src="img/ucles.png"></a>
           </div>
         </div>
       </div>
@@ -104,21 +111,23 @@
         <div class="row">
           <div class="span4">
               <a href="http://www.rbs.co.uk"><img class="partner" src="img/rbs.jpg"></a>
-              <a href="http://www.centrica.co.uk"><img class="partner" src="img/centrica.jpeg"></a></li>              
+              <a href="http://www.ey.co.uk"><img class="partner" src="img/ey.gif"></a>
           </div>
           <div class="span4">
-            <a href="http://www.hsbc.co.uk"><img class="partner" src="img/hsbc.png"></a>
+            <a href="http://www.hsbc.co.uk"><img class="partner" src="img/hsbc.gif"></a>
+            <a href="http://www.centrica.co.uk"><img class="partner" src="img/centrica.jpeg"></a>
           </div>
           <div class="span4">
-            <a href="http://www.ey.co.uk"><img class="partner" src="img/ey.gif"></a>
-            <a href="http://www.gazprom.co.uk"><img class="partner" src="img/gazprom.png"></a>
             <a href="http://www.kpmg.co.uk"><img class="partner" src="img/kpmg.jpg"></a>
+            <a href="http://www.gazprom.co.uk"><img class="partner" src="img/gazprom.png"></a>
           </div>
         </div>
       </div>
     </div>
 
     <hr class="featurette-divider">
+
+    
     
     <div class="sign-up" id="who-is-enactus-for"> <!-- SIGN UP -->
       <h2 class="hero">Who is Enactus for?</h2>
@@ -128,7 +137,7 @@
             <p class="lead">Those who want to make a meaningful impact in their communities. People who want to face real life challenges.</p>
           </div>
           <div class="span6">
-            <p class="lead">Entrepreneurs. Project leaders. Business. Consultancy.</p>
+            <p class="lead">Entrepreneurs. Project leaders.<br>Business. Consultancy.</p>
           </div>
         </div>
       
@@ -137,13 +146,24 @@
             <p class="lead">If that sounds like you and you want to make a difference in someone's life, then sign up for our newsletter to be the first to receive updates.</p>
           </div>
         </div>
+        <div class="row">
+          <h2 class="project-name">Opening Event</h2>
+          <div class="span6">
+            <div style="width:195px; text-align:center;">
+              <iframe src="http://www.eventbrite.com/calendar-widget?eid=4653432542" frameborder="0" height="382" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+            </div>            
+            <!-- <p class="lead">If none of this have convinced you, you can come see for yourself at our Intro Event on October 7. Hear directly from the Enactus UK Programme Manager about alsdkjfasjdf. Enactus alumni. Learn exactly what Enactus is about from their experiences.</p> -->
+          </div>
+          <div class="span6">            
+            <p class="lead">During the second half, meet the current project directors and choose which projects you want to be involved in. If none of the projects interest you, feel free to come up with your own at our Idea Generation session.</p>
+          </div>
+        </div>
       </div>
 
       <!-- INPUT TO GOOGLE FORM -->
       <form class="email-form" action="https://docs.google.com/forms/d/1S6Zdmwr8eWpn0R1GVf6Szl3BsRZdVScobvgGQHnLoi0/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
         <div class="input-wrap">
-          <input class="input-email" type="text" name="entry.1834513087" placeholder="will@join.us"> <!-- EMAIL INPUT -->
-          <input class="button-submit" type="submit" name="submit" value="Submit"> <!-- SUBMIT BUTTON -->
+          <input class="input-email" type="email" required name="entry.1834513087" placeholder="Your email address here"><!-- EMAIL INPUT --><input class="button-submit" type="submit" name="submit" value="Submit"> <!-- SUBMIT BUTTON -->
         </div>        
       </form>
     </div>
@@ -153,15 +173,18 @@
         <ul class="social">
           <li>
             <a target="_blank" href="https://www.facebook.com/enactusucl" title="facebook"><img src="img/social-fb.jpg"></a>
+          </li>
           <li>
             <a target="_blank" href="http://twitter.com/enactusucl" title="twitter"><img src="img/social-tw.jpg"></a>
+          </li>
           <li>
-            <a target="_blank" href="mailto:info@enactusucl.org">email</a>
+            <a target="_blank" href="mailto:info@enactusucl.org"><i class="icon-envelope icon-white"></i></a>
+          </li>
         </ul>
 
         <ul class="sitemap">
           <li>
-            <a target="_blank" href="about-us.html">About Us</a>
+            <a href="about-us.html">About Us</a>
           <!-- <li>
             <a target="_blank" href="#who-is-enactus-for">Jobs</a> -->
         </ul>
@@ -170,7 +193,6 @@
 
       </div>
     </footer>
-
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

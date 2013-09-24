@@ -3,22 +3,54 @@
 	enactus gold       gold       #FFC222
 	enactus grey       grey       #515356
 
-set colour by: /*gold*/#FFC222
-/* if colour changes, simple find and replace */
-
 /******************************************************************/
-
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,900);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
 
 body {
-	/*background-color: #E7E7E2;*/
 	background-color: white;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
+	
+}
+
+.vision h1 {
+	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 48px;
+	line-height: 1.5em;
+	font-weight: 400;
+	color: #515356;
+}
+
+.hero {
+	font-size: 48px;
+	font-weight: 600;
+	color: #515356;
+	text-align: center;
+}
+
+.lead {
+	max-width: 960px;
+	margin: 0 auto; padding: 12px;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #515356;
+
+}
+
+.project-name {
+	font-weight: 400;
+	text-align: center;
+	border-bottom: 2px solid #FFC222;
+}
+
+.sign-up .lead {
+	text-align: center;
 }
 /* ########################################################################
                             		HEADER
@@ -29,9 +61,9 @@ header {
 	top: 0px; left: 0px;
 	/* looks */
 	height: 78px; width: 100%;
-	background-color: /*grey*/#515356;
+	background-color: #515356;
 	z-index: 10;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -71,14 +103,14 @@ header {
 }
 
 .navv li .active {
-	color: /*gold*/#FFC222;
+	color: #FFC222;
 	font-weight: bold;
-	/*background-color: /*gold*/#FFC222;*/
+	/*background-color: #FFC222;*/
 	/*padding: 3px 12px; */
 }
 
 .navv li a:hover {
-	color: /*gold*/#FFC222;
+	color: #FFC222;
 }
 
 /* ########################################################################
@@ -89,8 +121,8 @@ footer {
 	margin: 0; padding: 0;
 	overflow: hidden;
 	/*z-index: 10;*/
-	background-color: /*grey*/#515356;
-	border-bottom: 6px solid /*gold*/#FFC222;
+	background-color: #515356;
+	border-bottom: 6px solid #FFC222;
 }
 
 .inner-footer {
@@ -120,6 +152,10 @@ footer {
   	text-shadow:none; box-shadow: none;
 }
 
+.icon-envelope {
+	margin-top: 4px;
+}
+
 footer .sitemap {
 	line-height: 50px;
 	float: right;
@@ -138,7 +174,7 @@ footer .sitemap a { /*TEXT FORMAT*/
 }
 
 footer .sitemap a:hover {
-	color: /*gold*/#FFC222;
+	color: #FFC222;
 }
 
 .copyright {
@@ -150,23 +186,15 @@ footer .sitemap a:hover {
                            			BODY
 ######################################################################## */
 .content {
-	top: 78px; position: relative;
+	top: 69px; position: relative;
 	margin: 0;
 }
 
 .vision {
 	width: 100%;
-	background-color: /*gold*/#FFC222;
-	margin: auto; padding: 0;
-}
-
-.vision h1 {
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 48px;
-	line-height: 1.5em;
-	font-weight: 200;
-	color: /*grey*/#515356;
+	background-color: #FFC222;
+	margin: 0; padding: 0;
+	border-top: 12px solid #FFC222;
 }
 
 .video-container {
@@ -183,11 +211,13 @@ footer .sitemap a:hover {
 }
 
 
-.lead {
-	max-width: 960px;
-	margin: 0 auto; padding: 12px;
-	font-size: 18px;
+#whatwedo {
+	width: 100%;
+	margin: 0; padding: 0;
+	border: 1px solid red;
+
 }
+
 
 .project-title {
 	text-align: center;
@@ -199,17 +229,17 @@ footer .sitemap a:hover {
 	display: inline-block;
   	margin: 0 0.25em; 
   	padding-left: 4px; padding-right: 4px;
-  	background: /*gold*/#FFC222;
+  	background: #FFC222;
   	border-radius: 0px;
   	transition: all 0.3s ease-out;
 
 	text-decoration: none;
   	font-weight: bold;
-  	color: /*grey*/#515356;
+  	color: #515356;
 }
 .inline-link:hover { 
 	background: white;
-	color: /*gold*/#FFC222;
+	color: #FFC222;
 }
 /*.inline-link:active  { background: #C4E1F8; }*/
 /*.inline-link:visited { background: #F2BF97; }*/
@@ -225,23 +255,9 @@ footer .sitemap a:hover {
 	border: 1px solid red;
 }
 
-
-
 /* ########################################################################
                            	WHO IS ENACTUS FOR
 ######################################################################## */
-.sign-up h2, .hero {
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 48px;
-	font-weight: 200;
-	color: /*grey#515356;
-}
-
-.hero {
-	/*color: /*gold#FFC222;*/*/
-}
-
 .email-form {
 	width: 100%;
 	/*margin: auto 0;*/
@@ -250,40 +266,45 @@ footer .sitemap a:hover {
 }
 
 .input-wrap {
-	/*height: 48px;*/ width: 100%;
 	/*border: 1px solid red;*/
+	margin: 0 auto;
+	text-align: center;
 	margin-bottom: 12px;
 }
 
-input[type="text"] {
+input[type="email"] {
+    height: 42px;
     display: inline-block;
-    margin: 0; padding: 6px;
-    border: 2px solid /*grey*/#515356;
+    margin: 0; padding-left: 6px;
+    padding-top: 0px; padding-bottom: 0px;
+    border: 2px solid #515356;
     border-radius: 0px;
-    color: white;
+    color: #515356;
     transition: all 0.3s ease-out;
 }
-input[type="text"]:hover {
-    border-radius: 8px;
+input[type="email"]:hover {
+    
 } 
-input[type="text"]:focus {
+input[type="email"]:focus {
     outline: none;
-    border-color: /*gold*/#FFC222;
+    border-color: #FFC222;
 }
 
 .button-submit {
-	margin: 10px; padding: 10px;
+	height: 46px; width: 170px;
+	/*margin: 10px; padding: 10px;*/
 	display: inline-block;
-	background: /*gold*/#FFC222;
-	/*border: solid 1px /*grey#515356;*/
+	background: #FFC222;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: bold;
+	font-size: 18px; 
 	color: white;
-	text-decoration: none;
-	border: none;
-/*	border-radius: 0 8px 8px 0;
- 	-moz-border-radius: 0 8px 8px 0;
-  	-webkit-border-radius: 0 8px 8px 0;*/
+	text-decoration: none;	
+	border-radius: 0px;
+	border-width: 0px;
+}
+.button-submit:hover {
+	font-weight: bold;
+	color: #515356;text-decoration: none;
 }
 /* ########################################################################
                            		COMMITTEE
@@ -347,14 +368,17 @@ input[type="text"]:focus {
 	body {
 		padding-left: 0; padding-right: 0;
 	}
-	.logo {
-
+	header, .logo {
+		height: 50px;
+	}
+	.logo{
+		width: 100px;
 	}
 	.navv {
 		display: none;
 	}
-	.vision {
-		
+	.content {
+		top: 40px;
 	}
 	.vision h1 {
 		font-size: 28px;
@@ -362,37 +386,30 @@ input[type="text"]:focus {
 	.sign-up h2, .hero {
 		font-size: 30px;
 	}
-
 	.lead {
 	font-size: 14px;
-	}	
-
-	.partner {
+	}
+	.advisor, .partner {
 		max-width: 250px;
 		display: block;
 		margin: 0 auto;
 	}
-
 	.sign-up p {
 		text-align: center;
 	}
-
 	.thumbnail {
 		margin: 12px;
-		border: 0.5px solid /*grey*/#515356;
+		border: 0.5px solid #515356;
 		border-radius: 0px;
 		box-shadow: 2px 2px 5px #888;
 	}
-
-
-	.footer social, .footer sitemap {
+	footer social, .footer sitemap {
 		display: block;
 		text-align: middle;
 		margin: 0 auto;
 	}
-
 	footer .sitemap {
-   		padding: 1em 0;
+   		/*padding: 1em 0;*/
   	}
   	footer .copyright {
 	    display: block;
@@ -401,6 +418,18 @@ input[type="text"]:focus {
 	}
 }
 
-@media (max-width: 979px) {
-
+@media (min-width: 635px) and (max-width: 767px) {
+	.span4 {
+		text-align: center;
+	}
+	.partner {
+		max-width: 250px;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.advisor {
+		max-width: 250px;
+		display: block;
+		margin: 0 auto;
+	}
 }
