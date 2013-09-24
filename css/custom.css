@@ -255,6 +255,12 @@ footer .sitemap a:hover {
 /* ########################################################################
                            	WHO IS ENACTUS FOR
 ######################################################################## */
+.sign-up {
+	/*background: url(../img/enactus-origami.png) no-repeat;
+	background-size: 100%;*/
+
+}
+
 .email-form {
 	width: 100%;
 	/*margin: auto 0;*/
